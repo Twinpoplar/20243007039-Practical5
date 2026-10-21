@@ -6,6 +6,7 @@
     android:padding="16dp"
     android:background="@color/color_default_background">
 
+    <!-- Display the selected municipality name. Background and text color are set dynamically in Java -->
     <TextView
         android:id="@+id/textMunicipalityName"
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
         android:textStyle="bold"
         android:textColor="@color/color_text_light" />
 
+    <!-- Display the corresponding image for the municipality -->
     <ImageView
         android:id="@+id/imageMunicipality"
         android:layout_width="match_parent"
@@ -24,6 +26,7 @@
         android:layout_marginTop="12dp"
         android:contentDescription="@string/main_title" />
 
+    <!-- Scrollable area for the information text. Weight=1 ensures the button stays at the bottom -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -31,6 +34,7 @@
         android:layout_marginTop="12dp"
         android:fillViewport="true">
 
+        <!-- Display the factual summary from the string array -->
         <TextView
             android:id="@+id/textMunicipalityInfo"
             android:layout_width="match_parent"
@@ -40,6 +44,7 @@
             android:textColor="@color/color_text_dark" />
     </ScrollView>
 
+    <!-- Button to open the official website using an implicit intent -->
     <Button
         android:id="@+id/buttonVisitSite"
         android:layout_width="match_parent"

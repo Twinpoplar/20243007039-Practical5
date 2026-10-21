@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Main layout container -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -6,6 +7,7 @@
     android:orientation="vertical"
     android:background="@color/color_default_background">
 
+    <!-- Header bar displaying the main title -->
     <TextView
         android:id="@+id/textMainTitle"
         android:layout_width="match_parent"
@@ -17,12 +19,14 @@
         android:gravity="center"
         android:padding="16dp" />
 
+    <!-- Inner container for the image and input fields -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Map image, using weight=1 to fill available space dynamically -->
         <ImageView
             android:id="@+id/imageMain"
             android:layout_width="match_parent"
@@ -32,17 +36,18 @@
             android:scaleType="fitCenter"
             android:contentDescription="@string/main_title" />
 
+        <!-- Prompt text above the input field -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/prompt_municipality"
             android:textColor="@color/color_text_dark"
             android:textSize="16sp"
-
             android:textStyle="bold"
             android:paddingTop="12dp"
             android:paddingBottom="4dp" />
 
+        <!-- Input field configured for single-line text with a 'Go' keyboard action -->
         <EditText
             android:id="@+id/editMunicipality"
             android:layout_width="match_parent"
