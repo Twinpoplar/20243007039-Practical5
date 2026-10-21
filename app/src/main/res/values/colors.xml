@@ -9,4 +9,5 @@
     <color name="color_text_light">#FFFFFF</color>
     <color name="color_text_dark">#212121</color>
     <color name="color_default_background">#F5F5F5</color>
+    <color name="title_background">#5A5A5A</color>
 </resources>
